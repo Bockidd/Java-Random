@@ -15,7 +15,7 @@ public class JavaApplication1 {
         Scanner sayi = new Scanner(System.in);
         
         Random r=new Random(); 
-        int a=r.nextInt(4); // 1-20 arasında random sayılar oluşturulup a değişkenine atanır. 21 dahil değildir.
+        int a=r.nextInt(21); // 1-20 arasında random sayılar oluşturulup a değişkenine atanır. 21 dahil değildir.
 
         System.out.println("Sayı tahmin oyununa hoşgeldiniz!"+"\nTahmin aralığı: 1-20");
         try{
