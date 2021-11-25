@@ -1,0 +1,51 @@
+
+package javaapplication1;
+
+import java.util.*;
+import java.util.Random;
+
+public class JavaApplication1 {
+
+    
+    public static void main(String[] args) {
+        
+        /*Sayı tahmin oyunu
+        Kullanıcı kaç sayı tahmin edeceğini kendi seçecek  */
+        
+        Scanner sayi = new Scanner(System.in);
+        
+        Random r=new Random(); 
+        int a=r.nextInt(4); // 1-20 arasında random sayılar oluşturulup a değişkenine atanır. 21 dahil değildir.
+
+        System.out.println("Sayı tahmin oyununa hoşgeldiniz!"+"\nTahmin aralığı: 1-20");
+        try{
+        System.out.println("Kaç tahmin yapmak istiyorsunuz?");
+        int b=sayi.nextInt();
+      
+        for (int i = 0; i <= b; i++) {
+            System.out.println("Tahmininizi giriniz: ");
+            int c= sayi.nextInt();
+            if (c==a){
+                System.out.println("Tebrikler tahmininiz doğru!");
+                break;
+            }
+            else{
+               System.out.println("Tahmininiz yanlış");
+               continue;
+            }
+            
+        }
+        }
+        catch(InputMismatchException e){
+            System.out.println("Lütfen sadece sayı giriniz!");
+            
+        }
+        
+        
+        
+        
+       //Fulya Er
+    
+    }
+    
+}
